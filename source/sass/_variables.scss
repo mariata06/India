@@ -1,0 +1,63 @@
+//COLOR VARIABLES
+$white: #ffffff; // цвет блоков
+$primary-green: #3a8469; // цвет иконок
+$secondary-green: #3f6b5b; // цвет блоков
+$tertiery-green: #23665c; // цвет блоков
+$dark-green: #2a7166; // цвет кнопок
+$medium-green: #46a798; // цвет обводки кнопок
+$light-green: #cae7dc; // светло-зеленый цвет текста
+$burgundy: #531520; // бордовый цвет блоков
+$light-yellow: #f4d37d; // светло-желтый текст
+$cherry: #99031e; // красный цвет блоков
+$light-grey: #fbf8ed; // светло-серый цвет текста
+$primary-black: #031c18; // черный цвет блоков
+$secondary-black: #161f22; // черный цвет блоков
+$tertiery-black: #212c30; // темный цвет блоков
+$news-label: #3f7e67; // цвет ярлычка на новостях, ссылок, блоков
+$green-black: #354950; // зелено-черный цвет текста
+$sky: #b2d8db; // светло-голубой цвет ссылок хлебные крошки
+
+//DEVICE VARIABLES
+$max-tablet-width: 1023px; // максимум для версии пишем когда идем от desktop к mobile (768px - 1023px;)
+$max-mobile-width: 767px; // максимум для версии пишем когда идем от desktop к mobile (320px - 767px;)
+$min-tablet-width: 768px;
+$min-mobile-width: 320px;
+
+//RETINA VARIABLES
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+//FONTS VARIABLES
+$font-family: playfairdisplay;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$font-12: 12px;
+$font-13: 13px;
+$font-14: 14px;
+$font-15: 15px;
+$font-16: 16px;
+$font-17: 17px;
+$font-18: 18px;
+$font-20: 20px;
+$font-21: 21px;
+$font-24: 24px;
+$font-28: 28px;
+$font-32: 32px;
+$font-40: 40px;
+$height-18: 18px;
+$height-19: 19px;
+$height-20: 20px;
+$height-21: 21px;
+$height-22: 22px;
+$height-24: 24px;
+$height-25: 25px;
+$height-26: 26px;
+$height-29: 29px;
+$height-34: 34px;
+$height-36: 36px;
+$height-39: 39px;
+$height-48: 48px;
+$height-49: 49px;
