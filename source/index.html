@@ -7,14 +7,13 @@
   <title>Фонд Индии</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <!--<link rel="preload" href="fonts/cormorantgaramond-italic.woff2" as="font" type="font/woff2" crossorigin/>
-  <link rel="preload" href="fonts/cormorantgaramond-semibold.woff2" as="font" type="font/woff2" crossorigin/>
-  <link rel="preload" href="fonts/cormorantgaramond-bold.woff2" as="font" type="font/woff2" crossorigin/>
-  <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin/>
-  <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin/>
-  <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin/>-->
+  <link rel="preload" href="fonts/playfairdisplay-bold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/roboto-black.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="css/style.min.css" as="style" />
   <!--<link rel="preload" href="js/main.js" as="script" />-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
@@ -22,9 +21,407 @@
   <div class="page-wrapper">
     <header class="page-header">
       <div class="page-header__wrapper">
-        Индия
+        <div class="page-header__navigation navigation">
+          <div class="navigation__logo">
+            <picture>
+              <!-- 1х: 209px; 2x: 418px -->
+              <source type="image/webp" srcset="img/logo-desktop@1x.webp 1x, img/logo-desktop@2x.webp 2x">
+              <!-- 1х: 209px; 2x: 418px -->
+              <img data-src="img/logo-desktop@1x.png" src="img/logo-desktop@1x.png" srcset="img/logo-desktop@2x.png 2x"
+                alt="Логотип сайта Фонд Индии" width="209" height="142">
+            </picture>
+          </div>
+          <p>Фонд изучения культурного наследия Индии</p>
+          <div class="navigation__menu">
+            <ul class="navigation__menu-list">
+              <li>Услуги</li>
+              <li>Мероприятия</li>
+              <li>Школы танцев</li>
+              <li>Партнеры и спонсоры</li>
+              <li>Новости</li>
+              <li>О нас</li>
+              <li>Культура Индии</li>
+              <li>Контакты</li>
+            </ul>
+            <ul class="navigation__menu-social social">
+              <li>info@nrityas.ru</li>
+              <li>
+                <a href="https://vkontakte.com/" aria-label="vkontakte" class="social-list__link">
+                  <svg width="19" height="14">
+                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com/" aria-label="instagram" class="social-list__link">
+                  <svg width="16" height="16">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://facebook.com/" aria-label="facebook" class="social-list__link">
+                  <svg width="11" height="18">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://youtube.com/" aria-label="youtube" class="social-list__link">
+                  <svg width="20" height="15">
+                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="button navigation__contact-btn">Связаться</button>
+        </div>
+        <div class="page-header__video">
+          <div class="page-header__video-image">
+            <span>Прямой эфир</span>
+            <picture>
+              <!-- 1х: 880px; 2x: 1760px -->
+              <source type="image/webp" srcset="img/liveconcert-desktop@1x.webp 1x, img/liveconcert-desktop@2x.webp 2x">
+              <!-- 1х: 880px; 2x: 1760px -->
+              <img data-src="img/liveconcert-desktop@1x.png" src="img/liveconcert-desktop@1x.png"
+                srcset="img/liveconcert-desktop@2x.png 2x" alt="Живой Концерт" width="880" height="480">
+            </picture>
+            <button class="page-header__video-button button">
+              <svg width="98" height="98">
+                <use xlink:href="img/sprite.svg#icon-play"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="page-header__video-desc">
+            <span>Сейчас в эфире</span>
+            <h1>Живой концерт: Танцы&nbsp;Индии со звездами</h1>
+          </div>
+        </div>
+        <div class="page-header__anons anons anons--main">
+          <time datetime="2021-12-22">22.12</time>
+          <span>Объявление</span>
+          <h2>Новый набор в школу Индийских танцев</h2>
+        </div>
+        <div class="page-header__anons-wrapper">
+          <div class="page-header__anons-item anons anons--black">
+            <time datetime="2021-12-22">21.12</time>
+            <span>Объявление</span>
+            <h3>Новый набор в школу Индийских танцев</h3>
+          </div>
+          <div class="page-header__anons-item anons anons--green">
+            <time datetime="2021-12-22">22.12</time>
+            <span>Объявление</span>
+            <h3>Новый набор в школу Индийских танцев</h3>
+          </div>
+          <div class="page-header__anons-item anons anons--red">
+            <time datetime="2021-12-22">23.12</time>
+            <span>Объявление</span>
+            <h3>Новый набор в школу Индийских танцев</h3>
+          </div>
+          <div class="page-header__anons-item">
+            <picture>
+              <!-- 1х: 360px; 2x: 720px -->
+              <source type="image/webp" srcset="img/schooldance-desktop@1x.webp 1x, img/schooldance-desktop@2x.webp 2x">
+              <!-- 1х: 360px; 2x: 720px -->
+              <img data-src="img/schooldance-desktop@1x.png" src="img/schooldance-desktop@1x.png"
+                srcset="img/schooldance-desktop@2x.png 2x" alt="набор в школу танцев" width="360" height="320">
+            </picture>
+          </div>
+        </div>
+        <div class="page-header__video-wrapper">
+          <div class="page-header__video-item">
+            <span>Лучшие видео</span>
+            <h3>Занимательные истории о культуре Индии</h3>
+          </div>
+          <div class="page-header__video-item">
+            <span>Лучшие видео</span>
+            <h3>Занимательные истории о культуре Индии</h3>
+          </div>
+        </div>
       </div>
     </header>
+
+    <section class="service section">
+      <div class="section__content">
+        <h2>Популярные услуги фонда<a href="service.html">Все услуги</a></h2>
+        <div class="service__list section__list">
+          <div class="service__item">
+            <h3>Обучение индийским танцам</h3>
+          </div>
+          <div class="service__item">
+            <h3>Хореографические консультации</h3>
+          </div>
+          <div class="service__item">
+            <h3>Обучение индийским танцам</h3>
+          </div>
+          <div class="service__item">
+            <h3>Обучение индийским танцам</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news section">
+      <div class="news__content section__content">
+        <h2>Новости фонда<a href="news.html">Все новости</a></h2>
+        <div class="news__slider-list">
+          <!-- Swiper #1 -->
+          <div class="news__slider-item slider-item slider-item--concert swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide--first">
+                <span>Новости фонда</span>
+                <div class="swiper-slide__desc">
+                  <h3>Цикл воскресных концертов индийского классического на платформе ZOOM</h3>
+                  <time datetime="2020-12-12">12.12.20</time>
+                  <p>Фонд «Нритья Сабха» приглашает вас на очередной воскресный концерт индийского классического танца на платформе ZOOM.</p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--second">
+                <span>Новости фонда</span>
+                <div class="swiper-slid__desc">
+                  <h3>Цикл воскресных концертов индийского классического на платформе ZOOM</h3>
+                  <time datetime="2020-12-12">12.12.20</time>
+                  <p>Фонд «Нритья Сабха» приглашает вас на очередной воскресный концерт индийского классического танца на платформе ZOOM.</p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+          </div>
+
+          <!-- Swiper #2 -->
+          <div class="news__slider-item slider-item slider-item--sunset swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide--first">
+                <span>Новости фонда</span>
+                <div class="swiper-slide__desc">
+                  <h3>Цикл воскресных концертов индийского классического на платформе ZOOM</h3>
+                  <time datetime="2020-12-12">12.12.20</time>
+                  <p>Фонд «Нритья Сабха» приглашает вас на очередной воскресный концерт индийского классического танца на платформе ZOOM.</p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--second">
+                <span>Новости фонда</span>
+                <div class="swiper-slide__desc">
+                  <h3>Цикл воскресных концертов индийского классического на платформе ZOOM</h3>
+                  <time datetime="2020-12-12">12.12.20</time>
+                  <p>Фонд «Нритья Сабха» приглашает вас на очередной воскресный концерт индийского классического танца на платформе ZOOM.</p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+          </div>
+
+          <!-- Swiper #3 -->
+          <div class="news__slider-item slider-item slider-item--beach swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide--first">
+                <span>Новости фонда</span>
+                <div class="swiper-slide__desc">
+                  <h3>Цикл воскресных концертов индийского классического на платформе ZOOM</h3>
+                  <time datetime="2020-12-12">12.12.20</time>
+                  <p>Фонд «Нритья Сабха» приглашает вас на очередной воскресный концерт индийского классического танца на платформе ZOOM.</p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--second">
+                <span>Новости фонда</span>
+                <div class="swiper-slide__desc">
+                  <h3>Цикл воскресных концертов индийского классического на платформе ZOOM</h3>
+                  <time datetime="2020-12-12">12.12.20</time>
+                  <p>Фонд «Нритья Сабха» приглашает вас на очередной воскресный концерт индийского классического танца на платформе ZOOM.</p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="world-news section">
+      <div class="section__content">
+        <h2>Мировые новости<a href="news.html">Все новости</a></h2>
+        <div class="world-news__slider-list">
+          <!-- Swiper #1 -->
+          <div class="world-news__slider-item slider-item slider-item--news1 swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide--first">
+                <div class="swiper-slide__desc">
+                  <h3>Цикл воскресных концертов индийского классического на платформе ZOOM</h3>
+                  <time datetime="2020-12-12">12.12.20</time>
+                  <p>Фонд «Нритья Сабха» приглашает вас на очередной воскресный концерт индийского классического танца на платформе ZOOM.</p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--second">
+                <div class="swiper-slide__desc">
+                  <h3>Цикл воскресных концертов индийского классического на платформе ZOOM</h3>
+                  <time datetime="2020-12-12">12.12.20</time>
+                  <p>Фонд «Нритья Сабха» приглашает вас на очередной воскресный концерт индийского классического танца на платформе ZOOM.</p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Swiper #2 -->
+          <div class="world-news__slider-item slider-item slider-item--news2 swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide--first">
+                <div class="swiper-slide__desc">
+                  <h3>Цикл воскресных концертов индийского классического на платформе ZOOM</h3>
+                  <time datetime="2020-12-12">12.12.20</time>
+                  <p>Фонд «Нритья Сабха» приглашает вас на очередной воскресный концерт индийского классического танца на платформе ZOOM.</p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--second">
+                <div class="swiper-slide__desc">
+                  <h3>Цикл воскресных концертов индийского классического на платформе ZOOM</h3>
+                  <time datetime="2020-12-12">12.12.20</time>
+                  <p>Фонд «Нритья Сабха» приглашает вас на очередной воскресный концерт индийского классического танца на платформе ZOOM.</p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Swiper #3 -->
+          <div class="world-news__slider-item slider-item slider-item--news3 swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide--first">
+                <div class="swiper-slide__desc">
+                  <h3>Цикл воскресных концертов индийского классического на платформе ZOOM</h3>
+                  <time datetime="2020-12-12">12.12.20</time>
+                  <p>Фонд «Нритья Сабха» приглашает вас на очередной воскресный концерт индийского классического танца на платформе ZOOM.</p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--second">
+                <div class="swiper-slide__desc">
+                  <h3>Цикл воскресных концертов индийского классического на платформе ZOOM</h3>
+                  <time datetime="2020-12-12">12.12.20</time>
+                  <p>Фонд «Нритья Сабха» приглашает вас на очередной воскресный концерт индийского классического танца на платформе ZOOM.</p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="events section">
+      <div class="section__content">
+        <h2>Мероприятия<a href="events.html">Все услуги</a></h2>
+        <div class="events__wrapper">
+          <div class="events__item events__item--main anons anons--main">
+            <time datetime="2021-12-22">22.12</time>
+            <span>Объявление</span>
+            <h2>Новый набор в школу Индийских танцев</h2>
+          </div>
+          <div class="events__group">
+            <div class="events__item anons anons--black">
+              <time datetime="2021-12-22">21.12</time>
+              <span>Объявление</span>
+              <h3>Новый набор в школу Индийских танцев</h3>
+            </div>
+            <div class="events__item anons anons--green">
+              <time datetime="2021-12-22">22.12</time>
+              <span>Объявление</span>
+              <h3>Новый набор в школу Индийских танцев</h3>
+            </div>
+            <div class="events__item anons anons--red">
+              <time datetime="2021-12-22">23.12</time>
+              <span>Объявление</span>
+              <h3>Новый набор в школу Индийских танцев</h3>
+            </div>
+            <div class="events__item">
+              <picture>
+                <!-- 1х: 360px; 2x: 720px -->
+                <source type="image/webp" srcset="img/schooldance-desktop@1x.webp 1x, img/schooldance-desktop@2x.webp 2x">
+                <!-- 1х: 360px; 2x: 720px -->
+                <img data-src="img/schooldance-desktop@1x.png" src="img/schooldance-desktop@1x.png"
+                  srcset="img/schooldance-desktop@2x.png 2x" alt="набор в школу танцев" width="360" height="320">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section">
+      <div class="about__content">
+        <h2>О фонде</h2>
+        <p>Фонд «Нритья Сабха» это уникальное  и единственное в России творческое объединение талантливых исполнителей различных стилей индийского классического танца, получивших образование в ведущих институтах культуры Индии. Участники Фонда ведут активную концертную и преподавательскую деятельность в России и за ее пределами.</p>
+        <p>В 2008 году, по рекоммендации Культурного Центра Посольства Индии, Фонд «Нритья Сабха» был принят в состав профессиональных исполнителей индийского классического танца Индийского Совета по Культурным Связям (ICCR , Дели, Индия).</p>
+        <p>В октябре 2009 года, по рекоммендации Культурного Центра Посольства Индии, Индийский Совет по Культурным Связям  наградил Фонд грантом  в сумме 10 000 $ для дальнейшего развития.</p>
+        <a href="#">Подробнее</a>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__content">
+        <a href="#">Политика конфиденциальности</a>
+        <p class="page-footer__copyright">Сайт сделан в The Red Button</p>
+      </div>
+    </footer>
   </div>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper1 = new Swiper(".swiper-container.slider-item--concert", {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      //prevEl: ".swiper-button-prev",
+    },
+  });
+
+  var swiper2 = new Swiper(".swiper-container.slider-item--sunset", {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+    },
+  });
+
+  var swiper3 = new Swiper(".swiper-container.slider-item--beach", {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+    },
+  });
+
+  var swiper4 = new Swiper(".swiper-container.slider-item--news1", {
+    slidesPerView: 1,
+    loop: true,
+  });
+
+  var swiper5 = new Swiper(".swiper-container.slider-item--news2", {
+    slidesPerView: 1,
+    loop: true,
+  });
+
+  var swiper6 = new Swiper(".swiper-container.slider-item--news3", {
+    slidesPerView: 1,
+    loop: true,
+  });
+</script>
 </body>
 
+</html>

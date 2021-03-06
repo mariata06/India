@@ -1,0 +1,40 @@
+.about {
+  background-color: $tertiery-black;
+
+  background-image: url("../img/aboutfund-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/aboutfund-bg-desktop@2x.png");
+  }
+}
+
+.about__content {
+  padding-right: 768px;
+
+  p,
+  a {
+    font-family: "roboto", "Arial", sans-serif;
+  }
+
+  p {
+    @include text($font-18, $height-26, $regular);
+  }
+
+  a {
+    @include text($font-14, $height-20, $medium);
+    font-family: "roboto", "Arial", sans-serif;
+    color: $medium-green;
+    position: relative;
+
+    &::after {
+      content: url("../img/icon-linkarrow.svg");
+      position: absolute;
+      display: block;
+      top: 0;
+      right: -40px;
+    }
+  }
+}
+

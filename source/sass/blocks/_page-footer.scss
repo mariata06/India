@@ -1,0 +1,23 @@
+.page-footer {
+  background-color: $black2;
+}
+
+.page-footer__content {
+  padding: 181px 48px 77px 412px;
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    @include reset;
+    @include text($font-18, $height-26, $regular);
+  }
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+.page-footer__copyright {
+  color: $green-black;
+}

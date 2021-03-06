@@ -1,0 +1,45 @@
+.navigation {
+  background-color: $main-green;
+  grid-column: 1/2;
+  grid-row: 1/4;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  font-family: "playfairdisplay", "Arial", sans-serif;
+
+  padding-top: 30px;
+
+  li {
+    @include text($font-20, $height-22, $bold);
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  p {
+    @include reset;
+    @include text($font-18, $height-22, $bold);
+    text-align: center;
+    margin-bottom: 87px;
+  }
+}
+
+.navigation__logo {
+  width: 209px;
+  margin: 0 auto;
+}
+
+.navigation__menu-list {
+  @include list-reset;
+}
+
+.navigation__contact-btn {
+  background-color: $red;
+  color: $white;
+  width: 100%;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  margin-bottom: 0;
+}

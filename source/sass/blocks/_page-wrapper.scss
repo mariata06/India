@@ -1,11 +1,9 @@
 .page-wrapper {
   width: 1920px;
+  margin: 0 auto;
 
+  /*
   @media (max-width: 1440px) {
     width: 1440px;
-  }
-
-  //display: grid;
-  //grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
-  //grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
+  }*/
 }

@@ -1,0 +1,67 @@
+.news {
+  background-color: $secondary-black;
+
+  .slider-item--concert {
+    width: 485px;
+
+    .swiper-slide--first {
+      background-image: url("../img/fundnews-slide1-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/fundnews-slide1-desktop@2x.png");
+      }
+    }
+
+    .swiper-slide--second {
+      background-image: url("../img/fundnews-slide1-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/fundnews-slide1-desktop@2x.png");
+      }
+    }
+  }
+
+  .slider-item--sunset {
+    width: 485px;
+
+    .swiper-slide--first {
+      background-image: url("../img/fundnews-slide2-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/fundnews-slide2-desktop@2x.png");
+      }
+    }
+
+    .swiper-slide--second {
+      background-image: url("../img/fundnews-slide4-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/fundnews-slide4-desktop@2x.png");
+      }
+    }
+  }
+
+  .slider-item--beach {
+    width: 485px;
+
+    .swiper-slide--first {
+      background-image: url("../img/fundnews-slide3-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/fundnews-slide3-desktop@2x.png");
+      }
+    }
+
+    .swiper-slide--second {
+      background-image: url("../img/fundnews-slide6-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/fundnews-slide6-desktop@2x.png");
+      }
+    }
+  }
+}
+
+.news__slider-list {
+  display: flex;
+}

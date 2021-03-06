@@ -1,0 +1,37 @@
+.bread-crumbs {
+  background-color: $tertiery-black;
+  font-family: "roboto", "Arial", sans-serif;
+  margin-bottom: 15px;
+
+  a {
+    color: $white;
+  }
+
+  .bread-crumbs__current {
+    color: $sky;
+  }
+
+  .bread-crumbs__list {
+    @include list-reset;
+    display: flex;
+
+    li {
+      position: relative;
+      margin-right: 33px;
+    }
+
+    li::after {
+      content: url("../img/icon-arrowsmall.svg");
+      position: absolute;
+      top: 0;
+      right: -25px;
+      display: block;
+    }
+
+    .bread-crumbs__current {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

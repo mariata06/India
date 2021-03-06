@@ -1,0 +1,81 @@
+.swiper-slide {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 485px 232px;
+
+  .swiper-slide__desc {
+    width: 100%;
+    padding: 20px;
+    padding-top: 260px;
+    padding-right: 90px;
+    box-sizing: border-box;
+
+    a {
+      @include text($font-14, $height-20, $medium);
+      font-family: "roboto", "Arial", sans-serif;
+      color: $medium-green;
+      position: relative;
+
+      &::after {
+        content: url("../img/icon-linkarrow.svg");
+        position: absolute;
+        display: block;
+        top: 0;
+        right: -40px;
+      }
+    }
+
+    h3 {
+      @include reset;
+      @include text($font-18, $height-22, $bold);
+      margin-bottom: 5px;
+    }
+
+    time {
+      @include text($font-12, $height-14, $black);
+      font-family: "roboto", "Arial", sans-serif;
+      color: $light-yellow;
+    }
+
+    p {
+      @include reset;
+      @include text($font-14, $height-20, $regular);
+      font-family: "roboto", "Arial", sans-serif;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  }
+
+  span {
+    @include text($font-12, $height-14, $medium);
+    font-family: "roboto", "Arial", sans-serif;
+    color: $white;
+    background-color: $medium-green;
+    padding: 5px 15px;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.swiper-button-next {
+  width: 80px;
+  height: 40px;
+  background-color: $white;
+  right: 50px;
+  bottom: 52%;
+  z-index: 1;
+  top: unset;
+
+  &::before {
+    width: 47px;
+    height: 8px;
+    content: url("../img/icon-arrowpagination.svg");
+    display: block;
+    position: absolute;
+    z-index: 100;
+  }
+
+  &::after {
+    display: none;
+  }
+}

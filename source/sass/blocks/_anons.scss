@@ -1,0 +1,48 @@
+.anons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  time {
+    @include title ($playfairdisplay, $font-48, $height-58, $bold, $light-yellow);
+    text-align: right;
+    margin-bottom: auto;
+  }
+
+  h2,
+  h3,
+  span {
+    @include reset;
+  }
+
+  h2 {
+    @include title ($playfairdisplay, $font-36, $height-43, $bold, $white);
+    width: 500px;
+  }
+
+  h3 {
+    @include title ($playfairdisplay, $font-24, $height-29, $bold, $white);
+  }
+
+  span {
+    @include anons ($playfairdisplay, $font-16, $height-19, $bold, $light-yellow);
+    margin-bottom: 20px;
+    margin-top: 110px;
+  }
+
+  &:not(:last-child) {
+    padding: 25px;
+  }
+
+  &--black {
+    background-color: $primary-black;
+  }
+
+  &--green {
+    background-color: $medium-green;
+  }
+
+  &--red {
+    background-color: $cherry;
+  }
+}

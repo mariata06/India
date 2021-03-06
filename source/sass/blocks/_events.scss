@@ -1,0 +1,30 @@
+.events {
+  background-color: $secondary-black;
+}
+
+.events__wrapper {
+  display: flex;
+
+  .events__item--main {
+    width: 740px;
+    background-image: url("../img/events-dancepromo-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 740px 640px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/events-dancepromo-desktop@2x.png");
+    }
+  }
+}
+
+.events__group {
+  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
+  width: 720px;
+
+  .events__item {
+    width: 360px;
+    height: 320px;
+  }
+}

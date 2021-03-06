@@ -1,0 +1,43 @@
+.service {
+  background-color: $tertiery-black;
+}
+
+.service__list {
+  display: grid;
+  grid-template-columns: 349px 349px 349px 349px;
+  grid-auto-rows: 328px;
+  grid-gap: 22px;
+}
+
+.service__item {
+  display: flex;
+
+  h3 {
+    @include reset;
+    @include text($font-24, $height-29, $bold);
+    color: $white;
+    width: 270px;
+    margin-top: auto;
+  }
+
+  background-color: $cherry;
+  padding: 34px;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    left: 0;
+    content: url("../img/serviceitem-bg.svg");
+    bottom: 0;
+  }
+
+  &:nth-child(2n) {
+    &::after {
+      transform: scale(-1, 1);
+    }
+  }
+}
+
