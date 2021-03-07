@@ -12,6 +12,12 @@
 
   padding-top: 30px;
 
+  &--consulting,
+  &--service {
+    position: absolute;
+    width: 319px;
+  }
+
   li {
     @include text($font-20, $height-22, $bold);
     text-align: center;

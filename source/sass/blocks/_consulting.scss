@@ -1,0 +1,32 @@
+.consulting {
+  background-image: url("../img/choreographic-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/choreographic-bg-desktop@2x.png");
+  }
+
+  padding-top: 76px;
+
+  h1 {
+    @include reset;
+    @include title ($playfairdisplay, $font-64, $height-70, $bold, $white);
+    width: 600px;
+    margin-bottom: 38px;
+  }
+
+  button {
+    @include text-pointer ($font-14, $height-24, $bold, $white);
+    font-family: "playfairdisplay", "Arial", sans-serif;
+    background-color: $cherry;
+    //position: absolute;
+    padding: 5px 50px 10px;
+    //transform: rotate(-90deg);
+    //writing-mode: vertical-rl;
+    //text-orientation: mixed;
+    //bottom: 72px;
+    //left: -78px;
+  }
+}

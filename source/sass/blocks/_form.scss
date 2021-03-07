@@ -1,0 +1,42 @@
+.form {
+  width: 339px;
+  //padding-right: 36px;
+
+  .from__wrapper {
+    width: 339px;
+  }
+
+  input {
+    @include text($font-14, $height-24, $regular);
+    padding: 16px 0 16px 29px;
+    width: 303px;
+    border: 1px solid $light-green;
+    outline: none;
+    margin-bottom: 7px;
+    background-color: $dark-green;
+
+    &::placeholder {
+      color: $green-white;
+    }
+  }
+
+  p {
+    @include text($font-12, $height-14, $regular);
+    font-family: "roboto", "Arial", sans-serif;
+    color: $aquamarine;
+
+    a {
+      color: $medium-sky;
+      text-transform: underline;
+    }
+  }
+
+  button {
+    @include text($font-14, $height-24, $regular);
+    background-color: $red;
+    padding: 15px 50px;
+    color: $white;
+    margin-top: 5px;
+    margin-bottom: 16px;
+  }
+}

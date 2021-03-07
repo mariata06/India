@@ -1,5 +1,11 @@
 .service {
   background-color: $tertiery-black;
+
+  h1 {
+    @include reset;
+    @include title ($playfairdisplay, $font-64, $height-70, $bold, $white);
+    margin-bottom: 73px;
+  }
 }
 
 .service__list {
@@ -14,10 +20,13 @@
 
   h3 {
     @include reset;
-    @include text($font-24, $height-29, $bold);
-    color: $white;
     width: 270px;
     margin-top: auto;
+
+    a {
+      @include text($font-24, $height-29, $bold);
+      color: $white;
+    }
   }
 
   background-color: $cherry;

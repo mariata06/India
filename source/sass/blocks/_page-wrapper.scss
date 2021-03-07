@@ -2,8 +2,12 @@
   width: 1920px;
   margin: 0 auto;
 
-  /*
-  @media (max-width: 1440px) {
-    width: 1440px;
-  }*/
+  &--consulting {
+    background-color: $secondary-black;
+    position: relative;
+  }
+
+  &--service {
+    position: relative;
+  }
 }

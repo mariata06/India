@@ -18,10 +18,10 @@
 </head>
 
 <body>
-  <div class="page-wrapper page-wrapper--service">
+  <div class="page-wrapper page-wrapper--consulting">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__navigation navigation navigation--service">
+        <div class="page-header__navigation navigation navigation--consulting">
           <div class="navigation__logo">
             <a href="index.html">
               <picture>
@@ -81,41 +81,90 @@
       </div>
     </header>
 
-    <section class="service section">
+    <section class="consulting section">
       <div class="section__content">
-        <div class="service__bread-crumbs bread-crumbs">
+        <div class="consulting__bread-crumbs bread-crumbs">
           <ul class="bread-crumbs__list">
             <li>
               <a href="index.html">Главная</a>
             </li>
-            <li class="bread-crumbs__current">Услуги фонда</li>
+            <li>
+              <a href="service.html">Услуги фонда</a>
+            </li>
+            <li class="bread-crumbs__current">Хореографические консультации</li>
           </ul>
         </div>
-        <h1>Услуги фонда</h1>
+        <h1>Хореографические консультации</h1>
+        <button class="button">Проконсультроваться</button>
+      </div>
+    </section>
+
+    <section class="consulting-desc section">
+      <div class="consulting-desc__content">
+        <div class="consulting-desc__text">
+          <h2>Описание услуги текстом и цифрами</h2>
+          <p>Тектоника применяет холодный гидроузел. На коротко подстриженной траве можно сидеть и лежать, но
+            рыболовство ежегодно. Культурный ландшафт вызывает глубокий официальный язык.</p>
+          <p>Альпийская складчатость, по определению, перевозит урбанистический кедровый стланик. Расовый состав,
+            несмотря на то, что в воскресенье некоторые станции метро закрыты, неоднороден по составу. В турецких банях
+            не принято купаться раздетыми, поэтому из полотенца сооружают юбочку, а добыча жемчуга традиционно перевозит
+            крестьянский символический центр современного Лондона.</p>
+          <p>Суша морей дегустирует пингвин. Русло временного водотока, куда входят Пик-Дистрикт, Сноудония и другие
+            многочисленные национальные резерваты природы и парки, мгновенно. Великобритания абсурдно надкусывает
+            протяженный небольшой парк с дикими животными к юго-западу от Манамы. Мохово-лишайниковая растительность
+            совершает утконос.</p>
+        </div>
+        <ul class="consulting-desc__numbers">
+          <li><span>50</span>описание цифры&nbsp;стастистики фонда</li>
+          <li><span>12</span>описание цифры&nbsp;стастистики фонда</li>
+          <li><span>1000</span>описание цифры&nbsp;стастистики фонда</li>
+          <li><span>5</span>описание цифры&nbsp;стастистики фонда</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="request section">
+      <div class="request__content">
+        <h2>Кому и зачем нужна эта услуга</h2>
+        <ul class="request__desc">
+          <li><span>1</span>
+            <p>Если вы давно интересуетесь индийской культурой</p>
+          </li>
+          <li><span>2</span>
+            <p>Если вы заботитесь о своем здоровье</p>
+          </li>
+          <li><span>3</span>
+            <p>Если вы хотите попробовать что-то новое</p>
+          </li>
+          <li class="request__item">
+            <h3>Оставить заявку на&nbsp;пробное занятие</h3>
+            <form action="info@nrityas.ru" class="request__item-form form">
+              <div class="form__wrapper">
+                <label for="name">
+                  <input id="name" type="text" placeholder="Ваше имя" required="">
+                </label>
+                <label for="tel">
+                  <input id="tel" type="tel" placeholder="Номер телефона" required="">
+                </label>
+                <button type="submit" class="form__button button">Отправить заявку</button>
+                <p>Нажимая кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь с условиями
+                  <a href="#">Политики конфиденциальности.</a></p>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="service section">
+      <div class="section__content">
+        <h2>Похожие услуги</h2>
         <div class="service__list section__list">
           <div class="service__item">
             <h3><a href="#">Обучение индийским танцам</a></h3>
           </div>
           <div class="service__item">
-            <h3><a href="#">Обучение индийским танцам</a></h3>
-          </div>
-          <div class="service__item">
-            <h3><a href="#">Обучение индийским танцам</a></h3>
-          </div>
-          <div class="service__item">
-            <h3><a href="#">Обучение индийским танцам</a></h3>
-          </div>
-          <div class="service__item">
-            <h3><a href="#">Обучение индийским танцам</a></h3>
-          </div>
-          <div class="service__item">
             <h3><a href="choreographic-consultation.html">Хореографические консультации</a></h3>
-          </div>
-          <div class="service__item">
-            <h3><a href="#">Обучение индийским танцам</a></h3>
-          </div>
-          <div class="service__item">
-            <h3><a href="#">Обучение индийским танцам</a></h3>
           </div>
           <div class="service__item">
             <h3><a href="#">Обучение индийским танцам</a></h3>
@@ -136,4 +185,5 @@
   </div>
 
 </body>
+
 </html>

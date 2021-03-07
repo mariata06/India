@@ -1,0 +1,45 @@
+.request {
+  ul {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid $grey-black;
+    justify-content: space-between;
+  }
+}
+
+.request__desc {
+  li {
+    border: 1px solid $grey-black;
+    width: 50%;
+    padding: 60px 214px 160px 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  p {
+    @include reset;
+    @include text($font-24, $height-29, $bold);
+    font-family: "playfairdisplay", "Arial", sans-serif;
+  }
+
+  span {
+    @include text($font-288, $height-184, $bold);
+    color: $grey-black;
+    margin-right: 72px;
+    width: 250px;
+    display: block;
+  }
+
+  .request__item {
+    background-color: $dark-green;
+    padding: 31px 36px;
+
+    h3 {
+      @include text($font-36, $height-43, $bold);
+      font-family: "playfairdisplay", "Arial", sans-serif;
+      margin-right: 71px;
+      text-align: right;
+    }
+  }
+}

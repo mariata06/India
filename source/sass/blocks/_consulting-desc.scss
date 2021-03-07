@@ -1,0 +1,55 @@
+.consulting-desc {
+  background-color: $grey-black;
+
+  .consulting-desc__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h2,
+  p {
+    width: 560px;
+  }
+
+  p,
+  li {
+    font-family: "roboto", "Arial", sans-serif;
+  }
+
+  h2 {
+    @include reset;
+    @include text($font-48, $height-58, $bold);
+    margin-bottom: 55px;
+  }
+
+  span {
+    @include text($font-72, $height-82, $bold);
+    font-family: "playfairdisplay", "Arial", sans-serif;
+    color: $light-yellow;
+    width: 100%;
+  }
+
+  .consulting-desc__text {
+    margin-right: 103px;
+  }
+
+  p {
+    line-height: 24px;
+  }
+
+  .consulting-desc__numbers {
+    @include list-reset;
+    width: 796px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+
+    li {
+      width: 398px;
+      padding: 27px 160px 26px 50px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: baseline;
+    }
+  }
+}
